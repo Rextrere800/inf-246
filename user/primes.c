@@ -5,8 +5,7 @@
 // Cada proceso lee de "izq", imprime el primer numero (es primo)
 // y le pasa a su hijo por "der" los que no son multiplos de el.
 
-void sieve(int izq)
-{
+void sieve(int izq) {
   int primo, n, pid;
   int der[2];
 
@@ -49,8 +48,7 @@ void sieve(int izq)
   }
 }
 
-int main(void)
-{
+int main(void) {
   int p[2], pid;
 
   if (pipe(p) < 0) {
